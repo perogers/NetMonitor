@@ -13,5 +13,5 @@ if [[ -z "${active// }" ]]
 	then
 	START=`date`
 	echo "${START} - Not active starting\n" >>$LOG
-	nohup python2 ${APP}  1>>${LOG} 2>>&1 &
+	nohup python2 ${APP}  1>${LOG} 2>&1 &
 fi
